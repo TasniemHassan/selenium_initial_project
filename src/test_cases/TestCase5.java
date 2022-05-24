@@ -14,6 +14,11 @@ email list for updates, promotions, and more." Checkbox Given user navigates to 
 When user clicks on “CONTACT US” link in the header
 Then user should be navigated to “CONTACT US” page
 And validate the "Sign up for our email list for updates, promotions, and more." checkbox
+
+
+        1. Make sure checkbox is deselected by default
+        2. click on it and now it should be selected
+        3. click on it again then it should be deselected
          */
 
         WebDriver driver = Driver.getDriver();

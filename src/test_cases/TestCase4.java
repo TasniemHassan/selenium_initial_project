@@ -24,7 +24,9 @@ And validate "Message" input box
     Contact_Us_Page_Navigation.navigateToContactUsPage();
 
     WebElement firstNameInputBox = driver.findElement(By.xpath("//input[@data-aid='First Name']"));
+   // WebElement firstNameInputBox = driver.findElement(By.xpath("((//form)[2]/div//input)[1]");
     WebElement firstNameInputBoxText = driver.findElement(By.xpath("//label[text()='First Name*']"));
+   // WebElement firstNameInputBoxText = driver.findElement(By.xpath("((//form)[2]/div//label)[1]"));
     WebElement lastNameInputBox = driver.findElement(By.xpath("//input[@data-aid='Last Name']"));
     WebElement lastNameInputBoxText = driver.findElement(By.xpath("//label[text()='Last Name*']"));
     WebElement emailInputBox = driver.findElement(By.xpath("//input[@data-aid='CONTACT_FORM_EMAIL']"));
@@ -43,7 +45,7 @@ And validate "Message" input box
         System.out.println(lastNameInputBoxText.getText().equals("Last Name*") && lastNameInputBox.isDisplayed()
                 ? "Last Name input box validation PASSED" : "Last Name input box validation FAILED");
         System.out.println(emailInputBoxText.getText().equals("Email*") && emailInputBox.isDisplayed()
-                ? "Email input box validation PASSED" : "FEmail input box validation FAILED");
+                ? "Email input box validation PASSED" : "Email input box validation FAILED");
         System.out.println(messageInputBox.getAttribute("placeholder").equals("Message*") && messageInputBox.isDisplayed()
                 ? "Message input box validation PASSED" : "Message input box validation FAILED");
 
